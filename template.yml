@@ -511,7 +511,7 @@ Resources:
                 Version: '1'
               Configuration:
                 ApplicationName: !Ref CodeDeployApplication
-                DeploymentGroupName: !GetAtt CodeDeployDeploymentGroup.DeploymentGroupName
+                DeploymentGroupName: !Ref CodeDeployDeploymentGroup
                 TaskDefinitionTemplateArtifact: EcrImage # This is the key part that connects the image to the deployment
               RunOrder: 1
 
