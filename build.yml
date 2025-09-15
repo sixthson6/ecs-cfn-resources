@@ -811,3 +811,7 @@ Outputs:
   EnvironmentName:
     Description: Name of the Environment
     Value: !Ref EnvironmentName
+
+  ArtifactBucket:
+    Description: "S3 bucket for CodeDeploy artifacts"
+    Value: !Ref ArtifactBucket
