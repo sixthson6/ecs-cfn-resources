@@ -1,4 +1,3 @@
-template-file-path: template.yml
-parameters:
-      ContainerImageName: ecs-app
+template-file-path: build.yml
+parameters: {}
 tags: {}
