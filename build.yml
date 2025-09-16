@@ -628,6 +628,7 @@ Resources:
   ArtifactBucket:
     Type: AWS::S3::Bucket
     Properties:
+      BucketName: my-ecs-artifact-bucket-771826808190-euc1
       VersioningConfiguration:
         Status: Enabled
       AccessControl: Private
