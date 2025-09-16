@@ -416,6 +416,8 @@ Resources:
       Protocol: HTTP
       TargetType: ip
       HealthCheckIntervalSeconds: 30
+      HealthyThresholdCount: 3
+      UnhealthyThresholdCount: 3
       HealthCheckPath: /
       HealthCheckPort: traffic-port
 
@@ -429,6 +431,8 @@ Resources:
       Protocol: HTTP
       TargetType: ip
       HealthCheckIntervalSeconds: 30
+      HealthyThresholdCount: 3
+      UnhealthyThresholdCount: 3
       HealthCheckPath: /
       HealthCheckPort: traffic-port
 
