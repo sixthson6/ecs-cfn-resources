@@ -675,6 +675,10 @@ Resources:
               Configuration:
                 ApplicationName: !Ref CodeDeployApplication
                 DeploymentGroupName: !Ref CodeDeploymentGroup
+                TaskDefinitionTemplateArtifact: SourceArtifact
+                TaskDefinitionTemplatePath: ecs/taskdef.json
+                AppSpecTemplateArtifact: SourceArtifact
+                AppSpecTemplatePath: ecs/appspec.yml
               InputArtifacts:
                 - Name: SourceArtifact
               RunOrder: 1
