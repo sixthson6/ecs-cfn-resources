@@ -3,7 +3,7 @@ Description: Template to setup network for ECR deployment
 Parameters:
   EnvironmentName:
     Type: String
-    Default: ecs-stack-064
+    Default: ecs-stack-065
     Description: Environment name
   VpcCidr:
     Type: String
