@@ -35,7 +35,7 @@ Parameters:
     Description: Allowed Github Branch
   AppPort:
     Type: Number
-    Default: 80
+    Default: 8080
     Description: Application Port
   DeploymentZipFileName:
     Type: String
@@ -384,7 +384,7 @@ Resources:
           HealthCheck:
             Command:
               - CMD-SHELL
-              - "curl -f http://localhost:80/ || exit 1"
+              - "curl -f http://localhost:8080/ || exit 1"
             Interval: 30
             Timeout: 5
             Retries: 3
