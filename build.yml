@@ -3,7 +3,7 @@ Description: Template to setup network for ECR deployment
 Parameters:
   EnvironmentName:
     Type: String
-    Default: ecs-stack-063
+    Default: ecs-stack-064
     Description: Environment name
   VpcCidr:
     Type: String
@@ -458,7 +458,7 @@ Resources:
       Cluster: !Ref ECSCluster
       ServiceName: !Sub ${EnvironmentName}-service
       TaskDefinition: !Ref ECSTaskDefinition
-      DesiredCount: 1   # Safe until image exists
+      DesiredCount: 0   # Safe until image exists
       LaunchType: FARGATE
       DeploymentController:
         Type: CODE_DEPLOY
