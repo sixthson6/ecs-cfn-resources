@@ -4,7 +4,7 @@ Description: Template to setup network for ECR deployment
 Parameters:
   EnvironmentName:
     Type: String
-    Default: ecs-stack-068
+    Default: ecs-stack-069
     Description: Environment name
   VpcCidr:
     Type: String
@@ -675,10 +675,6 @@ Resources:
               Configuration:
                 ApplicationName: !Ref CodeDeployApplication
                 DeploymentGroupName: !Ref CodeDeploymentGroup
-                TaskDefinitionTemplateArtifact: SourceArtifact
-                TaskDefinitionTemplatePath: ecs/taskdef.json
-                AppSpecTemplateArtifact: SourceArtifact
-                AppSpecTemplatePath: ecs/appspec.yml
               InputArtifacts:
                 - Name: SourceArtifact
               RunOrder: 1
