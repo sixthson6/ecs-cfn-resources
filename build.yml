@@ -1,6 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Template to setup network for ECR deployment
-
 Parameters:
   EnvironmentName:
     Type: String
@@ -632,7 +631,7 @@ Resources:
   ArtifactBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: my-ecs-artifact-bucket-771826808190-euc1
+      BucketName: my-ecs-artifact-bucket-241533136420-euc1
       VersioningConfiguration:
         Status: Enabled
       AccessControl: Private
